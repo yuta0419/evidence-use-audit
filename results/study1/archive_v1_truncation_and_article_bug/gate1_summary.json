@@ -1,0 +1,58 @@
+{
+  "n_items": 589,
+  "buckets": {
+    "strict_default_error": {
+      "count": 273,
+      "rate": 0.4634974533106961
+    },
+    "loose_default_error": {
+      "count": 161,
+      "rate": 0.2733446519524618
+    },
+    "default_solved": {
+      "count": 144,
+      "rate": 0.24448217317487267
+    },
+    "t0_parse_invalid": {
+      "count": 11,
+      "rate": 0.01867572156196944
+    }
+  },
+  "sanity_gate": {
+    "bucket_sum_equals_n_items": {
+      "sum": 589,
+      "n_items": 589,
+      "pass": true
+    },
+    "per_model_to_item_bucket_consistency": {
+      "mismatches": 0,
+      "pass": true
+    }
+  },
+  "unstable": {
+    "definition": "model is eligible if its temp=0 prediction == gold; unstable if any of 5 temp=0.2 samples != gold; unstable_any (item) = OR over eligible models",
+    "n_eligible_model_item_checks": 308,
+    "n_unstable_model_item_checks": 44
+  },
+  "old_baseline_reference": {
+    "source": "docs/設計ブロック_0621.md §3.1",
+    "models": [
+      "llama3.1:8b",
+      "qwen2.5:7b"
+    ],
+    "n_items": 589,
+    "strict_default_error": {
+      "count": 266,
+      "rate": 0.45161290322580644
+    },
+    "loose_default_error": {
+      "count": 166,
+      "rate": 0.28183361629881154
+    },
+    "default_solved": {
+      "count": 157,
+      "rate": 0.266553480475382
+    },
+    "note": "旧run参考値。新runでの再現を目的としない。新run値と並記のみ。"
+  }
+}

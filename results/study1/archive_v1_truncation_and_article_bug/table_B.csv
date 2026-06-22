@@ -1,0 +1,8 @@
+question_type,n_personas_present,n_cells_item_ge_3,pct_strict_range,pct_strict_sd
+idea_suggestion,20,16,50.0,17.882638875405053
+latest_preference_acknowledgement,10,0,insufficient,insufficient
+preference_aligned_recommendation,19,10,46.66666666666666,17.392527130926084
+preference_evolution_tracking,20,20,50.0,17.842929807357187
+preference_update_reason_recall,20,18,66.66666666666666,21.28319814178758
+scenario_generalization,17,9,75.0,25.235006549544536
+user_shared_fact_recall,20,16,100.0,27.213786803212834

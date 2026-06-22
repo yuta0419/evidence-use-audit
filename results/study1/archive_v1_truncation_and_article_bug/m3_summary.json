@@ -1,0 +1,51 @@
+{
+  "n_strict_pool": 273,
+  "m3_solve_rate_on_strict": 0.23809523809523808,
+  "n_solved": 65,
+  "n_parse_invalid": 3,
+  "by_canonical_type": [
+    {
+      "canonical_type": "idea_suggestion",
+      "n": 80,
+      "m3_solve_rate": 0.05,
+      "small_n": false
+    },
+    {
+      "canonical_type": "latest_preference_acknowledgement",
+      "n": 8,
+      "m3_solve_rate": 0.125,
+      "small_n": true
+    },
+    {
+      "canonical_type": "preference_aligned_recommendation",
+      "n": 28,
+      "m3_solve_rate": 0.21428571428571427,
+      "small_n": true
+    },
+    {
+      "canonical_type": "preference_evolution_tracking",
+      "n": 31,
+      "m3_solve_rate": 0.25806451612903225,
+      "small_n": false
+    },
+    {
+      "canonical_type": "preference_update_reason_recall",
+      "n": 17,
+      "m3_solve_rate": 0.47058823529411764,
+      "small_n": true
+    },
+    {
+      "canonical_type": "scenario_generalization",
+      "n": 39,
+      "m3_solve_rate": 0.38461538461538464,
+      "small_n": false
+    },
+    {
+      "canonical_type": "user_shared_fact_recall",
+      "n": 70,
+      "m3_solve_rate": 0.32857142857142857,
+      "small_n": false
+    }
+  ],
+  "reading": "descriptive only; low m3_solve_rate -> strict pool persists with a different, stronger model lineage (residual); high m3_solve_rate -> default-solvability is confounded with capability for that slice. Neither claim generalizes to 'strong models in general' (single M3 model), and neither implies strict items require evidence (CLAUDE.md #8)."
+}

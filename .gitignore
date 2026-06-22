@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Acquired data (regenerate via src/data_acquisition/)
+data/
+
+# OS
+.DS_Store
+
+# API keys / secrets
+.env
+.env.*
+!.env.example

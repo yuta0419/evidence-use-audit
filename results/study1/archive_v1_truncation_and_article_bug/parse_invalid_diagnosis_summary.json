@@ -1,0 +1,53 @@
+{
+  "scope": "diagnostic-only; targets exactly the 11 t0_parse_invalid items from the existing Gate1 new run. No bucket, strict count, or summary file was modified.",
+  "determinism_check": {
+    "method": "re-queried llama3.1:8b at temp=0 with identical prompt/parser/num_predict=16 (original config) for all 11 items",
+    "n_pred_key_changed_vs_original": 0,
+    "note": "all 11 reproduced parse_invalid under the original config; determinism intact, no item flipped to a valid letter by chance."
+  },
+  "step2_aggregates": {
+    "by_model": {
+      "llama": 11,
+      "qwen": 0,
+      "both": 0
+    },
+    "by_canonical_type": {
+      "preference_update_reason_recall": 6,
+      "user_shared_fact_recall": 3,
+      "latest_preference_acknowledgement": 2
+    },
+    "by_persona_id": {
+      "9": 2,
+      "11": 1,
+      "13": 2,
+      "16": 2,
+      "17": 2,
+      "19": 2
+    },
+    "invalid_reason_distribution": {
+      "explanation_with_letter": 6,
+      "non_letter_answer": 4,
+      "malformed_output": 1
+    },
+    "origin_breakdown": {
+      "model_output_invalid (no letter ever, even with num_predict=120)": 4,
+      "config_truncation (letter only appears once num_predict is raised beyond 16)": 5,
+      "parser_bug_possible (letter already present at num_predict=16; leading-token parser missed it)": 1,
+      "inconclusive (still truncated/ambiguous even at num_predict=120)": 1
+    }
+  },
+  "step3_category": {
+    "verdict": "mixed — does not collapse into a single category A/B/C/D",
+    "B_evidence": "6/11 concentrate in preference_update_reason_recall; persona-level pairing (5 of 6 affected personas have exactly 2 invalid items, traced to shared context driving near-identical model outputs across sibling items).",
+    "A_evidence": "4/11 are genuine refusals with no letter stated even when given far more generation room (num_predict=120).",
+    "C_evidence": "Only 1/11 (bb7cf8c9) has a letter already present in the exact raw output captured under the original num_predict=16 config — the only case fixable by a parser change alone, with zero new generation.",
+    "D_evidence": "5/11 only reveal a letter once num_predict is raised; recovering them requires new generation under a different config, not a re-parse of existing output, because the original 16-token output never contained a letter.",
+    "blocking_issue": "Step 4's required sensitivity check (apply any new parser rule to the other 578 items and confirm buckets are unchanged) cannot be performed: raw_output was never persisted for those 578 items either (same root-cause gap as the 11 invalid items). There is nothing to re-parse for them, and generating raw_output for them now would mean re-running all 589 items, which is explicitly out of scope for this diagnostic ('589件全体...には触れない')."
+  },
+  "step4_recommendation": {
+    "action_taken": "none — no parser change, no re-parse, no bucket/denominator change. gate1_per_item.csv, gate1_summary.json, strict_pool.csv are all unmodified.",
+    "rationale": "Even the one parser-bug-possible item (bb7cf8c9) cannot be safely folded into a general rule change without the §Step4-mandated 578-item sensitivity check, which is blocked by the missing raw_output for those items. Changing the rule for 1 item only, without that check, would be exactly the 'fix the rule case-by-case to recover convenient items' pattern the user explicitly prohibited.",
+    "for_user_decision": "denominator choice (valid-only 578 vs all-589 with invalid counted separately) is left open, per the constraint that this prompt does not finalize it.",
+    "process_fix_for_future_runs": "raw_output must be persisted for every model call going forward (see CLAUDE.md update). A future full Gate-1-style re-run should pre-specify num_predict and a full-text (not leading-token-only) extraction rule before running, so this kind of retroactive ambiguity does not recur."
+  }
+}

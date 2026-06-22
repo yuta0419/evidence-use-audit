@@ -1,0 +1,64 @@
+froze strict pool: 276 items -> /Users/yuta/Desktop/evidence-use-audit/results/study1/strict_pool.csv
+  processed 25/276
+  processed 50/276
+  processed 75/276
+  processed 100/276
+  processed 125/276
+  processed 150/276
+  processed 175/276
+  processed 200/276
+  processed 225/276
+  processed 250/276
+  processed 275/276
+  processed 276/276
+{
+  "n_strict_pool": 276,
+  "m3_solve_rate_on_strict": 0.2536231884057971,
+  "n_solved": 70,
+  "n_parse_invalid": 3,
+  "by_canonical_type": [
+    {
+      "canonical_type": "idea_suggestion",
+      "n": 80,
+      "m3_solve_rate": 0.05,
+      "small_n": false
+    },
+    {
+      "canonical_type": "latest_preference_acknowledgement",
+      "n": 8,
+      "m3_solve_rate": 0.125,
+      "small_n": true
+    },
+    {
+      "canonical_type": "preference_aligned_recommendation",
+      "n": 28,
+      "m3_solve_rate": 0.21428571428571427,
+      "small_n": true
+    },
+    {
+      "canonical_type": "preference_evolution_tracking",
+      "n": 31,
+      "m3_solve_rate": 0.25806451612903225,
+      "small_n": false
+    },
+    {
+      "canonical_type": "preference_update_reason_recall",
+      "n": 18,
+      "m3_solve_rate": 0.5,
+      "small_n": true
+    },
+    {
+      "canonical_type": "scenario_generalization",
+      "n": 38,
+      "m3_solve_rate": 0.42105263157894735,
+      "small_n": false
+    },
+    {
+      "canonical_type": "user_shared_fact_recall",
+      "n": 73,
+      "m3_solve_rate": 0.3561643835616438,
+      "small_n": false
+    }
+  ],
+  "reading": "descriptive only; low m3_solve_rate -> strict pool persists with a different, stronger model lineage (residual); high m3_solve_rate -> default-solvability is confounded with capability for that slice. Neither claim generalizes to 'strong models in general' (single M3 model), and neither implies strict items require evidence (CLAUDE.md #8)."
+}
