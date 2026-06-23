@@ -1,0 +1,4 @@
+model,series,role,correct,incorrect,parse_invalid,n_items,accuracy_pct
+llama3.1:8b,local small,strict definition component,197,387,5,589,33.4
+qwen2.5:7b,local small,strict definition component,257,331,1,589,43.6
+gpt-4o-mini,commercial API,independent reference (not in strict),208,381,0,589,35.3

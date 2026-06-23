@@ -22,6 +22,7 @@ from dataclasses import dataclass
 import requests
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
+OPENAI_CHAT_URL = "https://api.openai.com/v1/chat/completions"
 
 LETTERS = ("a", "b", "c", "d")
 
@@ -55,6 +56,31 @@ def call_ollama(model: str, prompt: str, temperature: float, num_predict: int = 
     )
     resp.raise_for_status()
     return resp.json()["response"]
+
+
+def call_openai_chat(
+    model: str,
+    prompt: str,
+    temperature: float,
+    api_key: str,
+    max_tokens: int = DEFAULT_NUM_PREDICT,
+) -> str:
+    """Same C_default stimulus as call_ollama, routed to the OpenAI chat
+    completions API instead of a local ollama model. api_key is sent only in
+    the Authorization header, never logged or returned."""
+    resp = requests.post(
+        OPENAI_CHAT_URL,
+        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+        json={
+            "model": model,
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": temperature,
+            "max_tokens": max_tokens,
+        },
+        timeout=120,
+    )
+    resp.raise_for_status()
+    return resp.json()["choices"][0]["message"]["content"]
 
 
 def _strip_letter_token(token: str) -> str | None:
@@ -163,4 +189,18 @@ def query(
 ) -> ModelResponse:
     prompt = build_prompt(question, options)
     raw = call_ollama(model, prompt, temperature, num_predict=num_predict)
+    return ModelResponse(pred_letter=parse_letter(raw), raw_response=raw)
+
+
+def query_openai(
+    model: str,
+    question: str,
+    options: list[str],
+    temperature: float,
+    api_key: str,
+    max_tokens: int = DEFAULT_NUM_PREDICT,
+) -> ModelResponse:
+    """Same C_default stimulus/parser as query(), via the OpenAI API."""
+    prompt = build_prompt(question, options)
+    raw = call_openai_chat(model, prompt, temperature, api_key, max_tokens=max_tokens)
     return ModelResponse(pred_letter=parse_letter(raw), raw_response=raw)

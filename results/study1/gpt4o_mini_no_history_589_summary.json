@@ -1,0 +1,72 @@
+{
+  "n_items": 589,
+  "model": "gpt-4o-mini",
+  "temperature": 0.0,
+  "max_tokens": 256,
+  "buckets": {
+    "solved": {
+      "count": 208,
+      "rate": 0.3531409168081494
+    },
+    "error": {
+      "count": 381,
+      "rate": 0.6468590831918506
+    },
+    "parse_invalid": {
+      "count": 0,
+      "rate": 0.0
+    }
+  },
+  "sanity_gate": {
+    "sum_equals_n_items": {
+      "sum": 589,
+      "n_items": 589
+    }
+  },
+  "by_canonical_type": [
+    {
+      "canonical_type": "idea_suggestion",
+      "n": 93,
+      "solved_rate": 0.08602150537634409,
+      "small_n": false
+    },
+    {
+      "canonical_type": "latest_preference_acknowledgement",
+      "n": 17,
+      "solved_rate": 0.29411764705882354,
+      "small_n": true
+    },
+    {
+      "canonical_type": "preference_aligned_recommendation",
+      "n": 55,
+      "solved_rate": 0.3090909090909091,
+      "small_n": false
+    },
+    {
+      "canonical_type": "preference_evolution_tracking",
+      "n": 139,
+      "solved_rate": 0.5467625899280576,
+      "small_n": false
+    },
+    {
+      "canonical_type": "preference_update_reason_recall",
+      "n": 99,
+      "solved_rate": 0.7171717171717171,
+      "small_n": false
+    },
+    {
+      "canonical_type": "scenario_generalization",
+      "n": 57,
+      "solved_rate": 0.12280701754385964,
+      "small_n": false
+    },
+    {
+      "canonical_type": "user_shared_fact_recall",
+      "n": 129,
+      "solved_rate": 0.18604651162790697,
+      "small_n": false
+    }
+  ],
+  "comparison_note": "Independent reference measurement. Does NOT redefine strict_default_error (llama3.1:8b + qwen2.5:7b AND, CLAUDE.md #4). See docs/QC_notes_gpt4o_mini_no_history_0623.md for llama/qwen/gpt4o-mini comparison.",
+  "date": "2026-06-23"
+}

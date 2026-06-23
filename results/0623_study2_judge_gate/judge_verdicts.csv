@@ -1,0 +1,241 @@
+"question_id","question_type","control_type","candidate_response","intended_label","judge_verdict","judge_rationale","matches_intended","judge_raw_output"
+"06878be2","single-session-preference","positive","The user would prefer suggestions of Sony-compatible accessories or high-quality photography gear that can enhance their photography experience. They may not prefer suggestions of other brands' equipment or low-quality gear.","correct","incorrect","The candidate response does not provide specific accessory suggestions that complement the user's photography setup, nor does it directly address the user's request for recommendations. Instead, it makes a general statement about preferences without supporting evidence.","False","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide specific accessory suggestions that complement the user's photography setup, nor does it directly address the user's request for recommendations. Instead, it makes a general statement about preferences without supporting evidence.""
+}"
+"06878be2","single-session-preference","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: Can you suggest some accessories that would complement my current photography setup?","incorrect","incorrect","The candidate response does not provide any specific accessories or recommendations that would complement the user's photography setup, which is what the evidence suggests the user is seeking. Instead, it states a lack of specific details, which does not align with the user's request for suggestions.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide any specific accessories or recommendations that would complement the user's photography setup, which is what the evidence suggests the user is seeking. Instead, it states a lack of specific details, which does not align with the user's request for suggestions.""
+}"
+"07b6f563","single-session-preference","positive","The user would prefer suggestions of accessories that are compatible with an iPhone 13 Pro, such as high-quality screen protectors, durable cases, portable power banks, or phone wallet cases. They may not prefer suggestions of accessories that are not compatible with Apple products or do not enhance the functionality or protection of their phone.","correct","correct","The candidate response accurately reflects the user's request for accessories compatible with an iPhone 13 Pro, specifically mentioning high-quality screen protectors and phone wallet cases, which are supported by the evidence.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response accurately reflects the user's request for accessories compatible with an iPhone 13 Pro, specifically mentioning high-quality screen protectors and phone wallet cases, which are supported by the evidence.""
+}"
+"07b6f563","single-session-preference","negative","The user would prefer suggestions of accessories that are compatible with an iPhone 15 Pro, such as high-quality screen protectors, durable cases, portable power banks, or phone wallet cases. They may not prefer suggestions of accessories that are not compatible with Apple products or do not enhance the functionality or protection of their phone.","incorrect","incorrect","The evidence specifically mentions the user's interest in accessories for an iPhone 13 Pro, not an iPhone 15 Pro. The candidate response incorrectly assumes a preference for accessories compatible with a different model and includes generic statements about preferences that are not supported by the evidence.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The evidence specifically mentions the user's interest in accessories for an iPhone 13 Pro, not an iPhone 15 Pro. The candidate response incorrectly assumes a preference for accessories compatible with a different model and includes generic statements about preferences that are not supported by the evidence.""
+}"
+"0862e8bf","single-session-user","positive","Luna","correct","correct","The candidate response 'Luna' is directly supported by the evidence, which states that the user's cat's name is Luna.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response 'Luna' is directly supported by the evidence, which states that the user's cat's name is Luna.""
+}"
+"0862e8bf","single-session-user","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: What is the name of my cat?","incorrect","incorrect","The candidate response does not provide the name of the cat, which is explicitly stated in the evidence as 'Luna'.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide the name of the cat, which is explicitly stated in the evidence as 'Luna'.""
+}"
+"16c90bf4","single-session-assistant","positive","I recommended using a Pilsner or Lager for the recipe.","correct","correct","The candidate response accurately states that a Pilsner or Lager is recommended for the recipe, which is supported by the evidence.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response accurately states that a Pilsner or Lager is recommended for the recipe, which is supported by the evidence.""
+}"
+"16c90bf4","single-session-assistant","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: I'm looking back at our previous conversation about the Seco de Cordero recipe from Ancash. You mentioned using a light or medium-bodied beer, but I was wondering if you could remind me what type of beer you specifically recommended?","incorrect","incorrect","The candidate response does not provide a specific type of beer as recommended in the evidence. The evidence mentions that a pilsner or lager would work well, but the candidate response does not include this information.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide a specific type of beer as recommended in the evidence. The evidence mentions that a pilsner or lager would work well, but the candidate response does not include this information.""
+}"
+"1903aded","single-session-assistant","positive","Transcriptionist.","correct","correct","The candidate response 'Transcriptionist' matches the 7th job listed in the evidence provided.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response 'Transcriptionist' matches the 7th job listed in the evidence provided.""
+}"
+"1903aded","single-session-assistant","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?","incorrect","incorrect","The candidate response does not provide the 7th job from the list, which is 'Transcriptionist', and instead gives a non-committal statement.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide the 7th job from the list, which is 'Transcriptionist', and instead gives a non-committal statement.""
+}"
+"1b9b7252","single-session-assistant","positive","Mindful.org.","correct","correct","The candidate response 'Mindful.org' is supported by the evidence, which states that this website includes guided imagery exercises such as 'The Mountain Meditation' and 'The Body Scan Meditation.'","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response 'Mindful.org' is supported by the evidence, which states that this website includes guided imagery exercises such as 'The Mountain Meditation' and 'The Body Scan Meditation.'""
+}"
+"1b9b7252","single-session-assistant","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: I wanted to follow up on our previous conversation about mindfulness techniques. You mentioned some great resources for guided imagery exercises, can you remind me of the website that had free exercises like 'The Mountain Meditation' and 'The Body Scan Meditation'?","incorrect","incorrect","The candidate response does not provide the specific website mentioned in the evidence (Mindful.org) that offers free exercises like 'The Mountain Meditation' and 'The Body Scan Meditation'. Instead, it expresses uncertainty and does not answer the question.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide the specific website mentioned in the evidence (Mindful.org) that offers free exercises like 'The Mountain Meditation' and 'The Body Scan Meditation'. Instead, it expresses uncertainty and does not answer the question.""
+}"
+"1e043500","single-session-user","positive","Summer Vibes","correct","correct","The candidate response 'Summer Vibes' matches the name of the playlist mentioned in the evidence.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response 'Summer Vibes' matches the name of the playlist mentioned in the evidence.""
+}"
+"1e043500","single-session-user","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: What is the name of the playlist I created on Spotify?","incorrect","incorrect","The candidate response does not provide the name of the playlist, which is 'Summer Vibes' according to the evidence. Instead, it states a non-committal response that does not answer the question.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide the name of the playlist, which is 'Summer Vibes' according to the evidence. Instead, it states a non-committal response that does not answer the question.""
+}"
+"28bcfaac","single-session-assistant","positive","MusicTheory.net","correct","correct","The candidate response 'MusicTheory.net' is directly supported by the evidence, which states that this website offers free lessons and exercises on music theory.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response 'MusicTheory.net' is directly supported by the evidence, which states that this website offers free lessons and exercises on music theory.""
+}"
+"28bcfaac","single-session-assistant","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: I'm going back to our previous conversation about music theory. You mentioned some online resources for learning music theory. Can you remind me of the website you recommended for free lessons and exercises?","incorrect","incorrect","The candidate response does not provide the specific website mentioned in the evidence (MusicTheory.net) for free lessons and exercises, and instead states a non-committal statement.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide the specific website mentioned in the evidence (MusicTheory.net) for free lessons and exercises, and instead states a non-committal statement.""
+}"
+"2bf43736","single-session-assistant","positive","Chapter 4 of Book 1, titled 'Vocal Prayer and Meditation'.","correct","correct","The candidate response accurately states that Chapter 4 of Book 1 discusses vocal prayer and meditation, which is directly supported by the evidence provided.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response accurately states that Chapter 4 of Book 1 discusses vocal prayer and meditation, which is directly supported by the evidence provided.""
+}"
+"2bf43736","single-session-assistant","negative","Chapter 6 of Book 1, titled 'Vocal Prayer and Meditation'.","incorrect","incorrect","The evidence states that the relevant chapter is Chapter 4 of Book 1, not Chapter 6.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The evidence states that the relevant chapter is Chapter 4 of Book 1, not Chapter 6.""
+}"
+"311778f1","single-session-user","positive","10","correct","correct","The candidate response '10' accurately reflects the evidence that states the user spent '10 hours last month watching documentaries.'","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response '10' accurately reflects the evidence that states the user spent '10 hours last month watching documentaries.'""
+}"
+"311778f1","single-session-user","negative","12","incorrect","incorrect","The evidence states that the user spent 10 hours watching documentaries on Netflix last month, not 12.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The evidence states that the user spent 10 hours watching documentaries on Netflix last month, not 12.""
+}"
+"35a27287","single-session-preference","positive","The user would prefer responses that suggest cultural events where they can practice their language skills, particularly Spanish and French. They would also appreciate if the event has a focus on language learning resources. They would not prefer events that do not provide opportunities for language practice or cultural exchange.","correct","incorrect","The candidate response does not provide specific recommendations for cultural events happening this weekend, nor does it directly address the user's request for events celebrating language diversity and cultural exchange. Instead, it summarizes the user's preferences without offering evidence-supported answers.","False","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide specific recommendations for cultural events happening this weekend, nor does it directly address the user's request for events celebrating language diversity and cultural exchange. Instead, it summarizes the user's preferences without offering evidence-supported answers.""
+}"
+"35a27287","single-session-preference","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: Can you recommend some interesting cultural events happening around me this weekend?","incorrect","correct","The candidate response accurately reflects the lack of specific information in the evidence regarding cultural events happening this weekend.","False","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response accurately reflects the lack of specific information in the evidence regarding cultural events happening this weekend.""
+}"
+"38146c39","single-session-preference","positive","The user would prefer responses that build upon their previous experimentation with turbinado sugar, suggesting ingredients or techniques that complement its richer flavor. They might not prefer generic cookie-making advice or suggestions that don't take into account their existing use of turbinado sugar.","correct","correct","The candidate response accurately reflects the user's interest in enhancing their chocolate chip cookies by building upon their previous experimentation with turbinado sugar, indicating a preference for specific suggestions that complement its richer flavor.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response accurately reflects the user's interest in enhancing their chocolate chip cookies by building upon their previous experimentation with turbinado sugar, indicating a preference for specific suggestions that complement its richer flavor.""
+}"
+"38146c39","single-session-preference","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: I've been feeling like my chocolate chip cookies need something extra. Any advice?","incorrect","incorrect","The candidate response does not provide any specific advice or suggestions to enhance the flavor of chocolate chip cookies, which is what the evidence supports. Instead, it states a non-committal statement that does not address the user's request for advice.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide any specific advice or suggestions to enhance the flavor of chocolate chip cookies, which is what the evidence supports. Instead, it states a non-committal statement that does not address the user's request for advice.""
+}"
+"3d86fd0a","single-session-user","positive","a coffee shop in the city","correct","correct","The candidate response 'a coffee shop in the city' directly matches the information provided in the evidence about where the user met Sophia.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response 'a coffee shop in the city' directly matches the information provided in the evidence about where the user met Sophia.""
+}"
+"3d86fd0a","single-session-user","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: Where did I meet Sophia?","incorrect","incorrect","The candidate response does not provide the specific location where the user met Sophia, which is a coffee shop in the city according to the evidence. Instead, it expresses uncertainty and lacks the definitive answer supported by the evidence.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide the specific location where the user met Sophia, which is a coffee shop in the city according to the evidence. Instead, it expresses uncertainty and lacks the definitive answer supported by the evidence.""
+}"
+"488d3006","single-session-assistant","positive","The GR-90 trail.","correct","correct","The candidate response correctly identifies the GR-90 trail, which is explicitly mentioned in the evidence as the recommended hiking trail in the Natural Park of Moncayo mountain that offers stunning landscapes and panoramic views.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response correctly identifies the GR-90 trail, which is explicitly mentioned in the evidence as the recommended hiking trail in the Natural Park of Moncayo mountain that offers stunning landscapes and panoramic views.""
+}"
+"488d3006","single-session-assistant","negative","The GR-92 trail.","incorrect","incorrect","The evidence supports the GR-90 trail as the recommended hiking trail, not the GR-92 trail.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The evidence supports the GR-90 trail as the recommended hiking trail, not the GR-92 trail.""
+}"
+"58bf7951","single-session-user","positive","The Glass Menagerie","correct","correct","The candidate response states the play 'The Glass Menagerie', which is directly supported by the evidence provided.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response states the play 'The Glass Menagerie', which is directly supported by the evidence provided.""
+}"
+"58bf7951","single-session-user","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: What play did I attend at the local community theater?","incorrect","incorrect","The candidate response does not provide the specific play attended, which is 'The Glass Menagerie' as stated in the evidence. Instead, it expresses uncertainty and does not answer the question.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide the specific play attended, which is 'The Glass Menagerie' as stated in the evidence. Instead, it expresses uncertainty and does not answer the question.""
+}"
+"6ae235be","single-session-assistant","positive","Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.","correct","correct","The candidate response lists the refining processes used at the Lake Charles Refinery as stated in the evidence: atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response lists the refining processes used at the Lake Charles Refinery as stated in the evidence: atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.""
+}"
+"6ae235be","single-session-assistant","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?","incorrect","incorrect","The candidate response does not provide any specific information about the refining processes at the Lake Charles Refinery, which is contrary to the detailed evidence provided. The evidence lists specific processes used at the Lake Charles Refinery, but the candidate fails to mention any of them.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide any specific information about the refining processes at the Lake Charles Refinery, which is contrary to the detailed evidence provided. The evidence lists specific processes used at the Lake Charles Refinery, but the candidate fails to mention any of them.""
+}"
+"75f70248","single-session-preference","positive","The user would prefer responses that consider the potential impact of their cat, Luna, and her shedding on their sneezing, as well as the recent deep clean of the living room and its possible effect on stirring up dust. They might not prefer responses that fail to take into account these specific details previously mentioned, such as generic suggestions or unrelated factors.","correct","incorrect","The candidate response does not directly answer the question about whether the living room might be causing the user's sneezing. Instead, it discusses user preferences for responses without confirming or denying the connection between the living room and the sneezing.","False","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not directly answer the question about whether the living room might be causing the user's sneezing. Instead, it discusses user preferences for responses without confirming or denying the connection between the living room and the sneezing.""
+}"
+"75f70248","single-session-preference","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: I've been sneezing quite a bit lately. Do you think it might be my living room?","incorrect","incorrect","The candidate response does not provide an answer supported by the evidence. The evidence discusses keeping the living room dust-free due to a cat that sheds, which implies that dust and allergens could be a concern, potentially related to sneezing. However, the candidate response does not acknowledge this connection or provide any relevant information regarding the living room's impact on sneezing.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide an answer supported by the evidence. The evidence discusses keeping the living room dust-free due to a cat that sheds, which implies that dust and allergens could be a concern, potentially related to sneezing. However, the candidate response does not acknowledge this connection or provide any relevant information regarding the living room's impact on sneezing.""
+}"
+"7a8d0b71","single-session-assistant","positive","$2,000","correct","correct","$2,000 is the amount allocated for influencer marketing in the campaign plan, as stated in the evidence.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""$2,000 is the amount allocated for influencer marketing in the campaign plan, as stated in the evidence.""
+}"
+"7a8d0b71","single-session-assistant","negative","$4,000","incorrect","incorrect","The evidence states that the budget allocated for influencer marketing is $2,000, not $4,000.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The evidence states that the budget allocated for influencer marketing is $2,000, not $4,000.""
+}"
+"86b68151","single-session-user","positive","IKEA","correct","correct","The candidate response 'IKEA' accurately reflects the information provided in the evidence, which states that the new bookshelf is from IKEA.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response 'IKEA' accurately reflects the information provided in the evidence, which states that the new bookshelf is from IKEA.""
+}"
+"86b68151","single-session-user","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: Where did I buy my new bookshelf from?","incorrect","incorrect","The candidate response does not provide the specific detail that the evidence supports, which is that the bookshelf was bought from IKEA.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide the specific detail that the evidence supports, which is that the bookshelf was bought from IKEA.""
+}"
+"a89d7624","single-session-preference","positive","The user would prefer responses that take into account their previous experience in Denver, specifically their interest in live music and memorable encounter with Brandon Flowers. They might appreciate suggestions that revisit or build upon this experience, such as revisiting the same bar or exploring similar music venues in the area. The user may not prefer general tourist recommendations or activities unrelated to their interest in live music.","correct","correct","The candidate response accurately reflects the user's interest in live music and their previous experience in Denver, suggesting that they would prefer recommendations related to music venues or similar experiences rather than general tourist activities.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response accurately reflects the user's interest in live music and their previous experience in Denver, suggesting that they would prefer recommendations related to music venues or similar experiences rather than general tourist activities.""
+}"
+"a89d7624","single-session-preference","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: I'm planning a trip to Denver soon. Any suggestions on what to do there?","incorrect","incorrect","The candidate response does not provide any specific suggestions or information about what to do in Denver, which contradicts the user's request for suggestions based on their interest in the music scene and concerts.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide any specific suggestions or information about what to do in Denver, which contradicts the user's request for suggestions based on their interest in the music scene and concerts.""
+}"
+"ad7109d1","single-session-user","positive","500 Mbps","correct","correct","The candidate response '500 Mbps' directly states the internet speed mentioned in the evidence, which confirms that the user upgraded to this speed.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response '500 Mbps' directly states the internet speed mentioned in the evidence, which confirms that the user upgraded to this speed.""
+}"
+"ad7109d1","single-session-user","negative","502 Mbps","incorrect","incorrect","The evidence states that the user upgraded to 500 Mbps, not 502 Mbps.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The evidence states that the user upgraded to 500 Mbps, not 502 Mbps.""
+}"
+"b86304ba","single-session-user","positive","The painting is worth triple what I paid for it.","correct","correct","The candidate response states that the painting is worth triple what was paid for it, which is directly supported by the evidence provided.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response states that the painting is worth triple what was paid for it, which is directly supported by the evidence provided.""
+}"
+"b86304ba","single-session-user","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: How much is the painting of a sunset worth in terms of the amount I paid for it?","incorrect","incorrect","The candidate response does not provide the specific information that the painting of a sunset is worth triple what was paid for it, as stated in the evidence. Instead, it expresses uncertainty and does not answer the question directly.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide the specific information that the painting of a sunset is worth triple what was paid for it, as stated in the evidence. Instead, it expresses uncertainty and does not answer the question directly.""
+}"
+"bc8a6e93","single-session-user","positive","a lemon blueberry cake","correct","correct","The candidate response 'a lemon blueberry cake' is directly supported by the evidence, which states that the user made a lemon blueberry cake for their niece's birthday party.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response 'a lemon blueberry cake' is directly supported by the evidence, which states that the user made a lemon blueberry cake for their niece's birthday party.""
+}"
+"bc8a6e93","single-session-user","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: What did I bake for my niece's birthday party?","incorrect","incorrect","The candidate response does not provide the specific detail that the evidence supports, which is that the user baked a lemon blueberry cake for their niece's birthday party.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide the specific detail that the evidence supports, which is that the user baked a lemon blueberry cake for their niece's birthday party.""
+}"
+"c14c00dd","single-session-user","positive","Trader Joe's","correct","correct","The evidence states that the user picked up a lavender scented shampoo at Trader Joe's, which supports the candidate response that the brand of shampoo is Trader Joe's.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The evidence states that the user picked up a lavender scented shampoo at Trader Joe's, which supports the candidate response that the brand of shampoo is Trader Joe's.""
+}"
+"c14c00dd","single-session-user","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: What brand of shampoo do I currently use?","incorrect","incorrect","The candidate response does not provide the specific brand of shampoo mentioned in the evidence, which is a lavender scented shampoo from Trader Joe's. Instead, it states a lack of specific detail, which contradicts the evidence.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide the specific brand of shampoo mentioned in the evidence, which is a lavender scented shampoo from Trader Joe's. Instead, it states a lack of specific detail, which contradicts the evidence.""
+}"
+"caf9ead2","single-session-user","positive","5 hours","correct","correct","The candidate response '5 hours' accurately reflects the time it took to move to the new apartment as stated in the evidence.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response '5 hours' accurately reflects the time it took to move to the new apartment as stated in the evidence.""
+}"
+"caf9ead2","single-session-user","negative","7 hours","incorrect","incorrect","The evidence states that it took around 5 hours to move everything into the new apartment, not 7 hours.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The evidence states that it took around 5 hours to move everything into the new apartment, not 7 hours.""
+}"
+"dc439ea3","single-session-assistant","positive","Hoop Dance","correct","incorrect","The evidence does not mention any traditional game performed by skilled dancers at powwows, including the Hoop Dance.","False","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The evidence does not mention any traditional game performed by skilled dancers at powwows, including the Hoop Dance.""
+}"
+"dc439ea3","single-session-assistant","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: I was looking back at our previous conversation about Native American powwows and I was wondering, which traditional game did you say was often performed by skilled dancers at powwows?","incorrect","incorrect","The candidate response does not provide an answer to the question about which traditional game is performed by skilled dancers at powwows. Instead, it states a lack of specific detail, which does not align with the evidence provided.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide an answer to the question about which traditional game is performed by skilled dancers at powwows. Instead, it states a lack of specific detail, which does not align with the evidence provided.""
+}"
+"e9327a54","single-session-assistant","positive","The Sugar Factory at Icon Park.","correct","correct","The candidate response identifies The Sugar Factory, which is explicitly mentioned in the evidence as a dessert shop that offers giant milkshakes.","True","{
+  ""verdict"": ""correct"",
+  ""rationale"": ""The candidate response identifies The Sugar Factory, which is explicitly mentioned in the evidence as a dessert shop that offers giant milkshakes.""
+}"
+"e9327a54","single-session-assistant","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?","incorrect","incorrect","The candidate response does not provide the specific information about the dessert shop with giant milkshakes, which is The Sugar Factory according to the evidence. Instead, it states a lack of specific detail, which contradicts the evidence.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide the specific information about the dessert shop with giant milkshakes, which is The Sugar Factory according to the evidence. Instead, it states a lack of specific detail, which contradicts the evidence.""
+}"
+"gpt4_468eb064","temporal-reasoning","positive","Emma","correct","incorrect","The evidence states that the user caught up with Emma over lunch today, but the question asks about lunch last Tuesday, which is not supported by the evidence.","False","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The evidence states that the user caught up with Emma over lunch today, but the question asks about lunch last Tuesday, which is not supported by the evidence.""
+}"
+"gpt4_468eb064","temporal-reasoning","negative","I don't have a specific detail confirmed for that — nothing definite stands out to me regarding: Who did I meet with during the lunch last Tuesday?","incorrect","incorrect","The candidate response does not provide the name of the person the user met with during lunch last Tuesday, which is Emma, as stated in the evidence. Instead, it expresses uncertainty, which contradicts the evidence.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The candidate response does not provide the name of the person the user met with during lunch last Tuesday, which is Emma, as stated in the evidence. Instead, it expresses uncertainty, which contradicts the evidence.""
+}"
+"gpt4_7bc6cf22","temporal-reasoning","positive","12 days ago. 13 days (including the last day) is also acceptable.","correct","incorrect","The evidence states that the user read the March 15th issue of The New Yorker today, which means it was read on the current day, not 12 or 13 days ago.","False","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The evidence states that the user read the March 15th issue of The New Yorker today, which means it was read on the current day, not 12 or 13 days ago.""
+}"
+"gpt4_7bc6cf22","temporal-reasoning","negative","14 days ago. 13 days (including the last day) is also acceptable.","incorrect","incorrect","The evidence states that the user read the March 15th issue of The New Yorker today, which means it was read on the current day, not 14 days ago.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The evidence states that the user read the March 15th issue of The New Yorker today, which means it was read on the current day, not 14 days ago.""
+}"
+"gpt4_af6db32f","temporal-reasoning","positive","17 days ago. 18 days (including the last day) is also acceptable.","correct","incorrect","The evidence does not provide a specific number of days ago that the Super Bowl was watched. It only states that the user watched it today, which does not support the candidate response of 17 days ago or 18 days including the last day.","False","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The evidence does not provide a specific number of days ago that the Super Bowl was watched. It only states that the user watched it today, which does not support the candidate response of 17 days ago or 18 days including the last day.""
+}"
+"gpt4_af6db32f","temporal-reasoning","negative","19 days ago. 18 days (including the last day) is also acceptable.","incorrect","incorrect","The evidence does not provide any specific information about how many days ago the Super Bowl was watched. It only mentions that the user watched it today, which does not support the candidate response of 19 days ago or 18 days.","True","{
+  ""verdict"": ""incorrect"",
+  ""rationale"": ""The evidence does not provide any specific information about how many days ago the Super Bowl was watched. It only mentions that the user watched it today, which does not support the candidate response of 19 days ago or 18 days.""
+}"

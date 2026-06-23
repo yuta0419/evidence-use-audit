@@ -1,0 +1,9 @@
+canonical_type,n,llama3.1_8b_pct,qwen2.5_7b_pct,gpt4o_mini_pct,strict_pct_llama_qwen_AND,small_n
+idea_suggestion,93,4.3,11.8,8.6,86.0,False
+scenario_generalization,57,21.1,15.8,12.3,66.7,False
+user_shared_fact_recall,129,30.2,31.0,18.6,56.6,False
+preference_aligned_recommendation,55,29.1,40.0,30.9,50.9,False
+latest_preference_acknowledgement,17,29.4,47.1,29.4,47.1,True
+preference_evolution_tracking,139,43.9,66.9,54.7,22.3,False
+preference_update_reason_recall,99,60.6,74.7,71.7,18.2,False
+ALL,589,33.4,43.6,35.3,46.9,False

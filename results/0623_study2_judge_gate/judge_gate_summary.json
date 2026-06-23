@@ -1,0 +1,83 @@
+{
+  "stage": "gate-only (no behavioral/sufficiency experiment)",
+  "non_ku_pool_size": 422,
+  "non_ku_pool_by_type": {
+    "single-session-user": 70,
+    "multi-session": 133,
+    "single-session-preference": 30,
+    "temporal-reasoning": 133,
+    "single-session-assistant": 56
+  },
+  "determinacy_passing_pool_size": 170,
+  "determinacy_passing_pool_by_type": {
+    "single-session-user": 64,
+    "single-session-preference": 30,
+    "single-session-assistant": 56,
+    "temporal-reasoning": 20
+  },
+  "sample_size": 30,
+  "sample_by_type": {
+    "single-session-preference": 6,
+    "single-session-user": 11,
+    "single-session-assistant": 10,
+    "temporal-reasoning": 3
+  },
+  "negative_control_rule_usage": {
+    "r1": 9,
+    "r2": 21,
+    "unavailable": 0
+  },
+  "unavailable_negative_controls": [],
+  "provisional_judge_signal_vs_intended_labels": {
+    "note": "PROVISIONAL: computed against intended control labels (positive=correct, negative=incorrect), not human verdicts. judge_gate_human_sheet.csv, once filled in by a human, is the real reference.",
+    "n_judge_calls_attempted": 60,
+    "n_judge_invalid_output": 0,
+    "n_judge_scored": 60,
+    "raw_agreement": 0.8666666666666667,
+    "false_positive_count": 1,
+    "false_negative_count": 7,
+    "false_positive_by_type": {
+      "single-session-preference": 1
+    }
+  },
+  "judge_model": "gpt-4o-mini",
+  "prompt_version": "judge_prompt_v1",
+  "api_key_source": "environment variable OPENAI_API_KEY (optionally loaded from local .env via python-dotenv)",
+  "api_key_missing": false,
+  "external_send_count": 60,
+  "random_seed": 619,
+  "sample_size_requested": 30,
+  "sampled_question_ids": [
+    "06878be2",
+    "07b6f563",
+    "0862e8bf",
+    "16c90bf4",
+    "1903aded",
+    "1b9b7252",
+    "1e043500",
+    "28bcfaac",
+    "2bf43736",
+    "311778f1",
+    "35a27287",
+    "38146c39",
+    "3d86fd0a",
+    "488d3006",
+    "58bf7951",
+    "6ae235be",
+    "75f70248",
+    "7a8d0b71",
+    "86b68151",
+    "a89d7624",
+    "ad7109d1",
+    "b86304ba",
+    "bc8a6e93",
+    "c14c00dd",
+    "caf9ead2",
+    "dc439ea3",
+    "e9327a54",
+    "gpt4_468eb064",
+    "gpt4_7bc6cf22",
+    "gpt4_af6db32f"
+  ],
+  "date": "2026-06-23"
+}
