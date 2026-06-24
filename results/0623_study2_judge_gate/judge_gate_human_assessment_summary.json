@@ -1,0 +1,79 @@
+{
+  "note": "Computed against HUMAN ground truth (judge_gate_human_sheet.csv, human-confirmed 2026-06-23), not the provisional intended-label signal in judge_gate_summary.json. FP/FN are symmetric: FP = judge says correct when human truth says incorrect (either control type); FN = judge says incorrect when human truth says correct. (Corrected 2026-06-23 from an earlier version that only checked FP on negative controls and FN on positive controls — see docs/QC_notes_study2_judge_gate_human_adjudication_0623.md.)",
+  "judge_model": "gpt-4o-mini",
+  "prompt_version": "judge_prompt_v1",
+  "overall": {
+    "n_judgments": 60,
+    "raw_agreement": 0.9833333333333333,
+    "false_positive_count": 1,
+    "false_negative_count": 0
+  },
+  "by_type": {
+    "single-session-preference": {
+      "n_items": 6,
+      "n_judgments": 12,
+      "raw_agreement": 0.9166666666666666,
+      "false_positive_count": 1,
+      "false_negative_count": 0,
+      "item_ids": [
+        "06878be2",
+        "07b6f563",
+        "35a27287",
+        "38146c39",
+        "75f70248",
+        "a89d7624"
+      ]
+    },
+    "single-session-user": {
+      "n_items": 11,
+      "n_judgments": 22,
+      "raw_agreement": 1.0,
+      "false_positive_count": 0,
+      "false_negative_count": 0,
+      "item_ids": [
+        "0862e8bf",
+        "1e043500",
+        "311778f1",
+        "3d86fd0a",
+        "58bf7951",
+        "86b68151",
+        "ad7109d1",
+        "b86304ba",
+        "bc8a6e93",
+        "c14c00dd",
+        "caf9ead2"
+      ]
+    },
+    "single-session-assistant": {
+      "n_items": 10,
+      "n_judgments": 20,
+      "raw_agreement": 1.0,
+      "false_positive_count": 0,
+      "false_negative_count": 0,
+      "item_ids": [
+        "16c90bf4",
+        "1903aded",
+        "1b9b7252",
+        "28bcfaac",
+        "2bf43736",
+        "488d3006",
+        "6ae235be",
+        "7a8d0b71",
+        "dc439ea3",
+        "e9327a54"
+      ]
+    },
+    "temporal-reasoning": {
+      "n_items": 3,
+      "n_judgments": 6,
+      "raw_agreement": 1.0,
+      "false_positive_count": 0,
+      "false_negative_count": 0,
+      "item_ids": [
+        "gpt4_468eb064",
+        "gpt4_7bc6cf22",
+        "gpt4_af6db32f"
+      ]
+    }
+  }
+}

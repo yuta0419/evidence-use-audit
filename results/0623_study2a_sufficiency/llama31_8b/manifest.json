@@ -1,0 +1,60 @@
+{
+  "script_version": "study2a_sufficiency_v1_0623",
+  "timestamp_utc": "2026-06-23T14:00:57.467491+00:00",
+  "study": "study2a_sufficiency_longmemeval",
+  "population": "main",
+  "n_items_target": 20,
+  "item_ids": [
+    "0862e8bf",
+    "16c90bf4",
+    "1903aded",
+    "1b9b7252",
+    "1e043500",
+    "28bcfaac",
+    "2bf43736",
+    "311778f1",
+    "3d86fd0a",
+    "488d3006",
+    "58bf7951",
+    "6ae235be",
+    "7a8d0b71",
+    "86b68151",
+    "ad7109d1",
+    "b86304ba",
+    "bc8a6e93",
+    "c14c00dd",
+    "caf9ead2",
+    "e9327a54"
+  ],
+  "model": "llama3.1:8b",
+  "model_backend": "ollama",
+  "openai_snapshot_pin": null,
+  "snapshot_checked_at_utc": null,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "seed": 623,
+  "n_generations_per_item": 1,
+  "context_scaffold_version": "v1_role_content_join",
+  "conditions_run": [
+    "oracle"
+  ],
+  "judge_prompt_version_reference": "judge_prompt_v1",
+  "judge_prompt_path": "results/0623_study2_judge_gate/judge_prompt_v1.md",
+  "judge_not_run_by_this_script": true,
+  "inputs": {
+    "longmemeval_oracle.json": {
+      "path": "data/longmemeval/longmemeval_oracle.json",
+      "sha256": "821a2034d219ab45846873dd14c14f12cfe7776e73527a483f9dac095d38620c"
+    },
+    "determinacy_filter.csv": {
+      "path": "results/0623_study2_judge_gate/determinacy_filter.csv",
+      "sha256": "3588e3db740eff84f7c8c49726a0a79372a7b2153537e21dd106b438ec2c6b70"
+    },
+    "study2a_population_decision.json": {
+      "path": "results/0623_study2_judge_gate/study2a_population_decision.json",
+      "sha256": "490a31b0169c15d30e03a2186ad465284fb23f89562521c2c322afe61b5a10c1"
+    }
+  },
+  "parser": "src.study2_open.sufficiency_scaffold.parse_answer",
+  "output_schema": "per_item.jsonl"
+}

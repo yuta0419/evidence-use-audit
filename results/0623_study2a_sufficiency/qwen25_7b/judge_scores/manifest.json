@@ -1,0 +1,14 @@
+{
+  "script_version": "study2a_judge_score_v1_0623",
+  "timestamp_utc": "2026-06-23T14:04:18.214308+00:00",
+  "auditor_model_slug": "qwen25_7b",
+  "conditions_scored": [
+    "oracle"
+  ],
+  "judge_model": "gpt-4o-mini",
+  "judge_prompt_version": "judge_prompt_v1",
+  "judge_prompt_path": "results/0623_study2_judge_gate/judge_prompt_v1.md",
+  "judge_prompt_sha256": "0083e94ae8497c2c05d64b91fcde2d0f9cbd1612c949490400b392b2d0fd21a7",
+  "evidence_shown_to_judge": "always the oracle gold span (determinacy_filter.evidence_text_from_item), regardless of which condition the auditor saw",
+  "lenient_variant_rejected": "see docs/QC_notes_study2_judge_gate_human_adjudication_0623.md addendum"
+}

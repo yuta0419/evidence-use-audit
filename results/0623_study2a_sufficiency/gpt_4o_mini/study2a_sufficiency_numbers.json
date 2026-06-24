@@ -1,0 +1,45 @@
+{
+  "SUPERSEDED": "This file framed the result as a 20/20=1.000 headline without separating the floor-leak item (28bcfaac) or including the preference-exploratory pool. Superseded 2026-06-23 by study2a_sufficiency_numbers_v2.json and docs/study2a_sufficiency_summary_0623.md (revised). Kept for audit trail, not for citation.",
+  "study": "study2a_sufficiency_longmemeval",
+  "model": "gpt-4o-mini",
+  "judge_prompt_version": "judge_prompt_v1",
+  "population": "main_pool (single-session-user + single-session-assistant, n=20, gate human-confirmed 2026-06-23)",
+  "n": 20,
+  "headline_oracle_correct_rate": {
+    "k": 20,
+    "n": 20,
+    "rate": 1.0
+  },
+  "floor_noev_correct_rate": {
+    "k": 1,
+    "n": 20,
+    "rate": 0.05,
+    "floor_hit_item_ids": [
+      "28bcfaac"
+    ]
+  },
+  "conditional_sufficiency_noev_incorrect_subset": {
+    "k": 19,
+    "n": 19,
+    "rate": 1.0
+  },
+  "diagnostic_full_correct_rate": {
+    "k": 20,
+    "n": 20,
+    "rate": 1.0
+  },
+  "by_type": {
+    "single-session-assistant": {
+      "n": 9,
+      "oracle_correct_rate": 1.0,
+      "noev_correct_rate": 0.1111111111111111,
+      "full_correct_rate": 1.0
+    },
+    "single-session-user": {
+      "n": 11,
+      "oracle_correct_rate": 1.0,
+      "noev_correct_rate": 0.0,
+      "full_correct_rate": 1.0
+    }
+  }
+}

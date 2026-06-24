@@ -1,0 +1,31 @@
+{
+  "script_version": "full_vs_noev_v1_0623",
+  "timestamp_utc": "2026-06-23T05:22:34.150855+00:00",
+  "split": "32k",
+  "n_items_target": 589,
+  "k_options": 4,
+  "model": "qwen2.5:7b",
+  "model_backend": "ollama",
+  "openai_snapshot_pin": null,
+  "snapshot_checked_at_utc": null,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "seed": 623,
+  "n_shuffles": 3,
+  "history_serializer": "v1_content_only",
+  "conditions_run": [
+    "noev"
+  ],
+  "inputs": {
+    "questions_32k.csv": {
+      "path": "data/personamem_32k/questions_32k.csv",
+      "sha256": "cccd34cf53e0bc4d9536c04cff5ca045156d9a4e227e83327112482840bbc93c"
+    },
+    "shared_contexts_32k.jsonl": {
+      "path": "data/personamem_32k/shared_contexts_32k.jsonl",
+      "sha256": "217247ebfec9e8442fc53570c795ab69f21aad08745f7de78d9beab51b122d4a"
+    }
+  },
+  "parser": "prompting.parse_letter (Gate1 frozen)",
+  "output_schema": "per_item.jsonl"
+}

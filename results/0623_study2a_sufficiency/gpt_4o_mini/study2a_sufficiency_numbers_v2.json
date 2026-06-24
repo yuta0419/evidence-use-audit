@@ -1,0 +1,116 @@
+{
+  "sample_funnel": {
+    "non_ku_oracle_pool": 422,
+    "determinacy_passing_pool_rule_based": 170,
+    "judge_gate_sample_seed619": 30,
+    "note_on_extrapolation": "The 30-item sample is a SAMPLE of the 170 determinacy-passing pool, not validated in full. Rates below are sample-level eligibility findings, not rescaled population claims (170 or 422 denominators).",
+    "sample_human_confirmed_usable": 23,
+    "sample_human_confirmed_excluded": 7,
+    "usable_breakdown": {
+      "single-session-user": 11,
+      "single-session-assistant_main": 9,
+      "single-session-assistant_excluded_extraction_issue": 1,
+      "single-session-preference_exploratory": 3
+    },
+    "excluded_breakdown": {
+      "single-session-preference_localization_insufficient": 3,
+      "temporal_reasoning_excluded_by_design": 3,
+      "single-session-assistant_extraction_issue_dc439ea3": 1
+    }
+  },
+  "sufficiency_pool_main_minus_floor_leak": {
+    "n": 19,
+    "definition": "single-session-user + single-session-assistant main pool (n=20) MINUS 28bcfaac (reclassified as floor-leak / world-knowledge-solvable, not a memory item)",
+    "noev_correct_rate_floor": {
+      "k": 0,
+      "n": 19,
+      "rate": 0.0
+    },
+    "oracle_correct_rate": {
+      "k": 19,
+      "n": 19,
+      "rate": 1.0
+    },
+    "full_correct_rate": {
+      "k": 19,
+      "n": 19,
+      "rate": 1.0
+    },
+    "note": "C_full == C_oracle on this pool: NULL contrast for span-narrowing (cannot show narrowing to minimal span helps over full session for this model/pool)."
+  },
+  "floor_leak_items_excluded_from_sufficiency_claim": {
+    "item_ids": [
+      "28bcfaac"
+    ],
+    "rows": [
+      {
+        "item_id": "28bcfaac",
+        "noev": "correct",
+        "oracle": "correct",
+        "full": "correct"
+      }
+    ],
+    "reason": "C_noev correct (gold answer reproduced with zero context) -- plausibly general/world knowledge (musictheory.net is a well-known free resource), not evidence use. Left in the pool this would inflate floor and ceiling alike."
+  },
+  "preference_exploratory_pool": {
+    "n": 3,
+    "rows": [
+      {
+        "item_id": "a89d7624",
+        "noev": "incorrect",
+        "oracle": "correct",
+        "full": "incorrect"
+      },
+      {
+        "item_id": "07b6f563",
+        "noev": "incorrect",
+        "oracle": "correct",
+        "full": "incorrect"
+      },
+      {
+        "item_id": "38146c39",
+        "noev": "incorrect",
+        "oracle": "incorrect",
+        "full": "incorrect"
+      }
+    ],
+    "noev_correct_rate": {
+      "k": 0,
+      "n": 3,
+      "rate": 0.0
+    },
+    "oracle_correct_rate": {
+      "k": 2,
+      "n": 3,
+      "rate": 0.6666666666666666
+    },
+    "full_correct_rate": {
+      "k": 0,
+      "n": 3,
+      "rate": 0.0
+    },
+    "note": "C_full < C_oracle here (live contrast, opposite of main pool): full-session context lets the model drift into plausible but evidence-unsupported elaboration. One item (38146c39) fails all three conditions -- the gold target is a meta preference-summary, not a literal answer to the question asked, so even oracle-span grounding does not make the auditor reproduce that framing."
+  },
+  "source_level_review": {
+    "reviewed_packet": "results/0623_study2a_sufficiency/gpt_4o_mini/study2a_tier1_source_level_packet_reviewed.csv",
+    "review_summary": "results/0623_study2a_sufficiency/gpt_4o_mini/study2a_tier1_source_level_review_summary.md",
+    "date": "2026-06-24",
+    "main_oracle_rows_pass_clean": 18,
+    "main_oracle_rows_flagged_ambiguous_but_usable": 1,
+    "flagged_item": "c14c00dd",
+    "primary": {
+      "n": 19,
+      "C_noev_correct": 0,
+      "C_oracle_correct": 19
+    },
+    "strict_clean_sensitivity_excluding_c14c00dd": {
+      "n": 18,
+      "C_noev_correct": 0,
+      "C_oracle_correct": 18
+    },
+    "c14c00dd_caveat": "Evidence states the shampoo was bought at Trader Joe's; question asks for the brand. Mild store->brand inference. Kept in n=19, dropped in n=18 sensitivity.",
+    "c_full_leniency_note": "c14c00dd C_full candidate (\"lavender scented shampoo\") omits Trader Joe's yet judged correct -> at least one C_full pass is partial-answer judge leniency. C_full=C_oracle is a null/diagnostic contrast only; robust contrast is C_noev vs C_oracle.",
+    "preference_oracle_rows": "WEAK_PASS_SOURCE_LEVEL (07b6f563, a89d7624); exploratory only, not in main headline",
+    "floor_leak_28bcfaac": "PASS_FOR_EXCLUSION_SOURCE_LEVEL; world-knowledge resource, kept out of headline"
+  }
+}

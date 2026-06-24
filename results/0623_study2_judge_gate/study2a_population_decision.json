@@ -1,0 +1,54 @@
+{
+  "main_pool_item_ids": [
+    "0862e8bf",
+    "16c90bf4",
+    "1903aded",
+    "1b9b7252",
+    "1e043500",
+    "28bcfaac",
+    "2bf43736",
+    "311778f1",
+    "3d86fd0a",
+    "488d3006",
+    "58bf7951",
+    "6ae235be",
+    "7a8d0b71",
+    "86b68151",
+    "ad7109d1",
+    "b86304ba",
+    "bc8a6e93",
+    "c14c00dd",
+    "caf9ead2",
+    "e9327a54"
+  ],
+  "main_pool_n": 20,
+  "main_pool_by_type": {
+    "single-session-user": 11,
+    "single-session-assistant": 9
+  },
+  "preference_exploratory_item_ids": [
+    "07b6f563",
+    "38146c39",
+    "a89d7624"
+  ],
+  "preference_exploratory_n": 3,
+  "excluded_item_ids": [
+    "06878be2",
+    "35a27287",
+    "75f70248",
+    "dc439ea3",
+    "gpt4_468eb064",
+    "gpt4_7bc6cf22",
+    "gpt4_af6db32f"
+  ],
+  "excluded_n": 7,
+  "excluded_reason_by_id": {
+    "06878be2": "Human-confirmed 2026-06-23 (reviewed AI draft, confirmed in conversation): same pattern -- synthesized preference gold answer; localized evidence turn lacks enough specificity to literally support it. Judge correctly found neither control supported by the shown span. Recommend EXCLUDE.",
+    "35a27287": "Human-confirmed 2026-06-23 (reviewed AI draft, confirmed in conversation): gold answer is a synthesized preference summary (per item[\"answer\"]); the localized has_answer turn does not contain the weekend-specific detail the question asks about. Judge marked the dataset gold answer \"incorrect\" against the shown evidence -- a localization/evidence-construction gap, not a judge defect. Recommend EXCLUDE from usable pool.",
+    "75f70248": "Human-confirmed 2026-06-23 (reviewed AI draft, confirmed in conversation): gold answer references specific details (cat name \"Luna\", \"recent deep clean\") absent from the single localized has_answer turn. Evidence span insufficient. Recommend EXCLUDE.",
+    "dc439ea3": "Human-confirmed 2026-06-23 (reviewed AI draft, confirmed in conversation): gold answer \"Hoop Dance\" does not appear anywhere in the localized evidence_text (a single user turn asking for powwow tips). Likely the has_answer-flagged turn in the oracle split is not the turn that actually states the fact (or evidence_turn_indices missed the assistant turn with the answer). Recommend EXCLUDE and flag as a determinacy_filter/evidence-extraction finding, not patch silently.",
+    "gpt4_468eb064": "Human-confirmed 2026-06-23 (reviewed AI draft, confirmed in conversation): temporal-reasoning -- requires date arithmetic relative to the (unstated in evidence_text) date the question was asked; evidence_text only contains relative time refs (\"today\", \"last week\"). Already out of scope for Study 2a by type (usable=0 for temporal-reasoning per brief); recorded here for gate completeness.",
+    "gpt4_7bc6cf22": "Human-confirmed 2026-06-23 (reviewed AI draft, confirmed in conversation): same temporal-reasoning date-arithmetic gap as gpt4_468eb064. Out of scope for Study 2a by type.",
+    "gpt4_af6db32f": "Human-confirmed 2026-06-23 (reviewed AI draft, confirmed in conversation): same temporal-reasoning date-arithmetic gap. Out of scope for Study 2a by type."
+  }
+}

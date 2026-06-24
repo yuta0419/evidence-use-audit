@@ -1,0 +1,20 @@
+{
+  "llama31_8b": {
+    "n": 19,
+    "noev_k": 2,
+    "oracle_k": 19,
+    "noev_rate": 0.10526315789473684,
+    "oracle_rate": 1.0,
+    "28bcfaac_noev": "correct",
+    "28bcfaac_oracle": "correct"
+  },
+  "qwen25_7b": {
+    "n": 19,
+    "noev_k": 2,
+    "oracle_k": 18,
+    "noev_rate": 0.10526315789473684,
+    "oracle_rate": 0.9473684210526315,
+    "28bcfaac_noev": "incorrect",
+    "28bcfaac_oracle": "correct"
+  }
+}

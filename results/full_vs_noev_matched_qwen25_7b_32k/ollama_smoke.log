@@ -1,0 +1,21 @@
+smoke mode: 10 items
+  [noev] 1/10 item_id=125bfe37... majority=b
+  [noev] 2/10 item_id=7cab425e... majority=b
+  [noev] 3/10 item_id=8e7408fb... majority=d
+  [noev] 4/10 item_id=16f4886c... majority=b
+  [noev] 5/10 item_id=1dc1cb2f... majority=a
+  [noev] 6/10 item_id=ab2ae798... majority=d
+  [noev] 7/10 item_id=2aeaf04c... majority=None
+  [noev] 8/10 item_id=aae3e12c... majority=d
+  [noev] 9/10 item_id=4e2111be... majority=b
+  [noev] 10/10 item_id=1743e9cb... majority=c
+{
+  "out_base": "/Users/yuta/Desktop/evidence-use-audit/results/full_vs_noev_matched_qwen25_7b_32k",
+  "parse_valid_rate": 1.0,
+  "total_shuffles": 30,
+  "usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  }
+}
